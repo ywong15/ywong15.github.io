@@ -3,9 +3,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Template</title>
+		<title>Button</title>
 	</head>
 	<body>
-		<p>This is my HTML5 Template</p>
+		<p id="foo">This is my Button Page :D</p>
+		<input type="button" onclick="changeText()" value="Hit me" />
+
+		<script
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
+		
+		<script type="text/javascript">
+			function changeText() {
+				$("#foo").html("hi im steven");
+				$("#foo").fadeOut();
+			}
+		</script>
 	</body>
 </html>
