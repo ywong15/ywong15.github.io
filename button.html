@@ -4,22 +4,44 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Button</title>
+		<script
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
 	</head>
 	<body>
 		<h1>BUTTON PAGE !</h1>
 		<p>Steven</p>
+
 		<p id="foo">This is my Button Page :D</p>
 		<input type="button" onclick="changetext()" value="Hit me" />
+		<br></br>
 
-		<script
-			src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		
 		<script type="text/javascript">
 			function changetext() {
 				alert("HAHAHAHAHAHAHAHAHAHAHAHA");
 				$("#foo").html("hi im steven");
-				$("#foo").fadeOut();
+				//$("#foo").fadeOut();
+				//$("p").addClass("nice");
 			}
+
+		<p id="foo1">What will people say after GG?</p>
+		<input type="button" onclick="changetext2()" value="GG" />
+
+                        function changetext2() {
+                                $("#foo1").html("Well Play");
+				$("#foo1").css("color","blue");
+                        }
+
+		<p id="foo2">This is the button to my lyrics website.</p>
+		<input type="button" onclick="changetext3()" value="GL" />
+			function changetext3(){
+				$("foo2").html("");
+			}
+	
+		<p id="foo3">	
+		<input type="button" onclick="changetext4()" value="OMG" />
+		<input type="button" onclick="changetext5()" value="Are you dare to click this button?" />
+		<input type="button" onclick="changetext6()" value="HAHAHAHAHAHAHAH" />
 		</script>
 	</body>
 </html>
