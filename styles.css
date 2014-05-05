@@ -1,0 +1,16 @@
+body{
+  font-size: 16pt;
+  line-height: 1.5;
+  background-color: #eee; 
+  font-family: 'Shadows Into Light', cursive;
+ 
+}
+h1{
+  text-align:center;
+  color:#0000FF;
+  
+}
+h2{
+  color:#FF0000;
+}
+
