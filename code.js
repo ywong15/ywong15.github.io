@@ -1,16 +1,16 @@
 function changetext() {
 	 alert("HAHAHAHAHAHAHAHAHAHAHAHA");
-	 $("#foo").html("hi im steven");
-	 //$("#foo").fadeOut();
+	 $("#myButton").html("hi im steven");
+	 //$("#myButton").fadeOut();
        	 //$("p").addClass("nice");
                         }
 
  function changetext2() {
-	 $("#foo1").html("Well Play");
-         $("#foo1").css("color","blue");
-         $("#fool").css("fontSize","50px");
+	 $("#myButton").html("Well Play");
+         $("#myButton").css("color","blue");
+         $("#myButton").css("fontSize","50px");
                         }
 
 function changetext3() {
-	 $("#foo2").html("http://ywong15.github.io/lyrics.html");
+	 $("#myButton").html("http://ywong15.github.io/lyrics.html");
                         }
