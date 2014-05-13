@@ -6,11 +6,11 @@ function changetext() {
                         }
 
  function changetext2() {
-	 $("#myButton").html("Well Play");
-         $("#myButton").css("color","blue");
-         $("#myButton").css("fontSize","50px");
+	 $("#myButton2").html("Well Play");
+         $("#myButton2").css("color","blue");
+         $("#myButton2").css("fontSize","50px");
                         }
 
 function changetext3() {
-	 $("#myButton").html("http://ywong15.github.io/lyrics.html");
+	 $("#myButton3").html("http://ywong15.github.io/lyrics.html");
                         }
