@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Guessig Game</title>
+</head>
+<body>
+	<script>
+	
+	var a = prompt("Please enter a number"); 
+	var n = 5;
+		for (i = 0;i<10;i++){
+			if (a > n){
+				document.write("Too high");
+				a = prompt("Please try again");		
+}
+			else if (a < n){
+				document.write("Too low");
+				a = prompt("Please try again");
+}
+
+			else if (a == n){
+				document.write("Congratulations!" + a + "is the number!");
+				break;
+}
+} 
+	</script>
+</body>
+</html>
