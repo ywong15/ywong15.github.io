@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+    <script type="text/processing" data-processing-target="targetcanvas">
+     void setup(){
+      noStroke();
+      size(400, 400)
+      }
+      
+     void draw(){  
+      frameRate(100);
+
+      x = random(0, 400);
+      y = random(0, 400);
+      distance = dist(x, y, 200, 200);
+      if(distance >= 200){
+      fill (255, 0, 0);
+      ellipse(x, y, 7, 7);
+    }
+      else{fill (0, 0, 0);
+      noStroke();
+      ellipse(x, y, 7, 7);
+    }
+      }
+    </script>    
+  </head>
+
+  <body>
+    <canvas id="targetcanvas" width="400" height="400"></canvas>
+  </body>
+</html>
+
