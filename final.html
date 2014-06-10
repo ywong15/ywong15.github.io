@@ -3,7 +3,35 @@
 <html lang="en">
 
   <head>
+ <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+    <script type="text/processing" data-processing-target="targetcanvas">
+
+var x = 0;
+var y = 0;
+
+fill(0, 0, 0);
+text("Click to make a new circle worm", 93,43);
+text("Move out the mouse to stop the worm growing", 93, 56);
+text("Move back to keep the worm growing", 93, 69);
+var draw = function() {
+    x += random(0, 4);
+    y += random(-2, 2);
+    noStroke();
+    fill( random(255), random(255), random(255), random(255)); 
+    ellipse(x, y, 20, 20);
+};
+
+var mouseClicked = function() {
+    x = mouseX;
+    y = mouseY;
+    loop();
+};
+var mouseOut = function() {
+    noLoop();
+};
+
+var mouseOver = function(){
+    loop();
+};
+</script>
 </head>
-<body>
-final.js in my khanacademy, link: https://www.khanacademy.org/cs/final-latest-version/6338616750505984#cs-documentation-js 
-</body>
